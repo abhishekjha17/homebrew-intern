@@ -5,21 +5,21 @@
 class Intern < Formula
   desc "Proxy and profiler for Anthropic Claude API sessions"
   homepage "https://github.com/abhishekjha17/intern"
-  version "0.1.0"
+  version "0.1.2"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.0/intern_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f7f9626f5c017d5118576cedb3fb30764fc08f115e13d3ae1f0f337534c76d7f"
+      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.2/intern_0.1.2_darwin_amd64.tar.gz"
+      sha256 "d45438fec5c9949b545725f684ecc172839af57ddb8c84fb0ba64056dd1c8768"
 
       define_method(:install) do
         bin.install "intern"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.0/intern_0.1.0_darwin_arm64.tar.gz"
-      sha256 "0d2eb617a9d0fbb71b695d1c1439059118612fa9c88a2eefb847f3b9bea8fdaf"
+      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.2/intern_0.1.2_darwin_arm64.tar.gz"
+      sha256 "bb380d0d9b06c40ec99648aca1c5ca90051b428d994510880d9c642ae25e81fb"
 
       define_method(:install) do
         bin.install "intern"
@@ -29,15 +29,15 @@ class Intern < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.0/intern_0.1.0_linux_amd64.tar.gz"
-      sha256 "0bdb756800f3be011fe7ca4f5d6505b2924a73281fb10afc5f3e9eb2d3a5ebf3"
+      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.2/intern_0.1.2_linux_amd64.tar.gz"
+      sha256 "5635c304c6b9551495cc6b86918b62c0ec9f990e4bd3e1c770aee22ec6a9cf41"
       define_method(:install) do
         bin.install "intern"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.0/intern_0.1.0_linux_arm64.tar.gz"
-      sha256 "f4b69a7ed32df89bbba589feb47e841433626468666e0eca4b9af89ded9c74b5"
+      url "https://github.com/abhishekjha17/intern/releases/download/v0.1.2/intern_0.1.2_linux_arm64.tar.gz"
+      sha256 "a60e647701c55114b802d40c54d0684790c96006055bef24ea6e761bd4ed93e4"
       define_method(:install) do
         bin.install "intern"
       end
